@@ -1,6 +1,8 @@
 # darktable-themes
 theme posting for darktable
+
 English
+
 -The idea is to have a themed place for darktable. 
 -Next, it will be detailed how to work and how the theme files should be to try to avoid conflicts between themes and darktable. 
 -The following is intended for Linux users, so for other systems it must be adapted. 
@@ -14,6 +16,7 @@ English
 -For the icon themes to work, you have to create a shortcut in the "pixmaps" folder found at the following address / usr / share / darktable and put that shortcut at the following address /home/usu/.config/ darktable
 
 Español
+
 -La idea es la de tener un lugar con temas para darktable. 
 -A continuación se detallará,cómo se ha de trabajar y cómo han de estar los archivos de temas para intentar evitar conflictos entre los temas y darktable. 
 -Lo siguiente está dirigido para usuarios Linux, así que para otros sistemas hay que adaptarlo. 
