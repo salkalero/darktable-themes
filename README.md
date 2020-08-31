@@ -23,3 +23,6 @@ Es recomendable  crear un acceso directo del resto de temas predefenido de darkt
 -En este directorio /home/user/.config/darktable/themes tiene que estar los temas nuevos y los accesos directos de los archivos darktable.css,darktable-icons.css,darktable-elegant-dark.css,darktable-elegant-darker.css,darktable-elegant-darker.css,darktable-icons-dark.css,darktable-icons-darker.css,darktable-icons-grey.css
 -In this way you can create more themes with the combinations of these files.
 -De esta forma se podrá crear más temas con las combinaciones de estos archivos.
+
+-For the icon themes to work, you have to create a shortcut in the "pixmaps" folder found at the following address / usr / share / darktable and put that shortcut at the following address /home/usu/.config/ darktable
+-Para que funcionen los temas de iconos, hay que crear un acceso directo de la carpeta "pixmaps" que se encuentra en la siguiente dirección /usr/share/darktable   y poner ese acceso directo  en la siguiente dirección   /home/usu/.config/darktable
