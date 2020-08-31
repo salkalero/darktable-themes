@@ -1,0 +1,84 @@
+/*
+    This file is part of darktable,
+    copyright (c) 2019 Nicolas Auffray
+
+    darktable is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    darktable is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with darktable.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+@import url("darktable-icons.css");
+@import url("darktable-elegant-grey.css");
+
+/* other colors */
+@define-color orange_00 #e08217;
+
+/* Scroll bars (sliders) */
+
+@define-color scroll_bar_active @orange_00;
+
+/* Modules controls (sliders and comboboxes) */
+
+@define-color bauhaus_fill @orange_00;
+@define-color bauhaus_bg_hover @orange_00;
+@define-color bauhaus_fg_selected @orange_00;
+
+/* GTK Buttons and tabs */
+
+@define-color button_hover_bg @orange_00;
+
+/* text fields */
+
+@define-color field_hover_bg @orange_00;
+
+/* Lighttable and film-strip */
+
+@define-color thumbnail_star_bg_color @orange_00;
+@define-color thumbnail_fg_color @orange_00;
+@define-color thumbnail_hover_bg_color @orange_00;
+
+#background_job_eventbox /* background of export progress bar */
+progressbar progress
+{
+  background-color: @orange_00;
+  border-radius: 4px;
+}
+
+/* Set top margin on active image in filmstrip */
+
+#thumb_main:active #thumb_back
+{
+  border-top: 6px solid @orange_00;
+}
+
+/* Set stars icon when active */
+
+.dt_overlays_hover #thumb_main:hover #thumb_star:active,
+.dt_overlays_hover_extended #thumb_main:hover #thumb_star:active,
+.dt_overlays_always #thumb_star:active,
+.dt_overlays_always_extended #thumb_star:active,
+.dt_overlays_mixed #thumb_star:active,
+.dt_overlays_hover_block #thumb_image:hover #thumb_star:active
+{
+  color: @orange_00;
+  background-color: @orange_00;
+}
+
+/*-----------------
+  - Image options -
+  -----------------*/
+
+/* Set top margin on active image in filmstrip */
+#thumb_main:active #thumb_back
+{
+  border-top: 6px solid @orange_00;
+}
