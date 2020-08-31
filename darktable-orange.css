@@ -1,0 +1,156 @@
+/*
+    This file is part of darktable,
+    copyright (c) 2019 Aurélien Pierre.
+
+    darktable is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    darktable is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with darktable.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+@import url("darktable.css");
+
+/*** This has been tested with GTK 3.24 on Gnome ***/
+
+/* other colors */
+@define-color red_00 #ff0000;
+@define-color yellow_00 #ffff00;
+@define-color green_00 #00ff00;
+@define-color blue_00 #0000ff;
+@define-color magenta_00 #ff00ff;
+@define-color grey_01 #cccccc;
+@define-color orange_00 #e08217;
+@define-color greenpale_00 #0b78e3;
+@define-color grey_15 #232323;
+@define-color grey_25 #414141;
+@define-color grey_45 #191919;
+@define-color grey_50 #303030;
+@define-color grey_60 #a1a1a1;
+
+/* Modules box (plugins) */
+
+@define-color plugin_label_color @grey_55;
+
+/* Scroll bars (sliders) */
+
+@define-color scroll_bar_active @orange_00;
+
+/* Modules controls (sliders and comboboxes) */
+
+@define-color bauhaus_fill @orange_00;
+@define-color bauhaus_bg_hover @orange_00;
+@define-color bauhaus_fg_selected @orange_00;
+
+/* GTK Buttons and tabs */
+
+@define-color button_hover_bg @orange_00;
+@define-color button_fg @grey_01;
+
+/* text fields */
+
+@define-color field_selected_bg @grey_65;
+@define-color field_selected_fg @grey_25;
+@define-color field_hover_bg @orange_00;
+
+/* Tooltips and contextual helpers */
+
+@define-color tooltip_bg_color @grey_05;
+
+/* Lighttable and film-strip */
+
+@define-color thumbnail_star_bg_color @orange_00;
+@define-color thumbnail_fg_color @orange_00;
+@define-color thumbnail_hover_bg_color @orange_00;
+@define-color thumbnail_bg_color @grey_10;
+@define-color thumbnail_selected_bg_color @grey_40;
+
+/* Graphs : histogram, navigation thumbnail and some items on tone curve */
+
+@define-color graph_grid @grey_20;
+
+/* hide selection frame in culling */
+
+@define-color culling_selected_border_color transparent;
+
+/* Progress bar on bottom left side when exporting, importing, etc... */
+
+#background_job_eventbox /* background of export progress bar */
+progressbar progress
+{
+  background-color: @orange_00;
+  border-radius: 4px;
+}
+
+/* Set top margin on active image in filmstrip */
+
+#thumb_main:active #thumb_back
+{
+  border-top: 6px solid @orange_00;
+}
+
+/* Set stars icon when active */
+
+.dt_overlays_hover #thumb_main:hover #thumb_star:active,
+.dt_overlays_hover_extended #thumb_main:hover #thumb_star:active,
+.dt_overlays_always #thumb_star:active,
+.dt_overlays_always_extended #thumb_star:active,
+.dt_overlays_mixed #thumb_star:active,
+.dt_overlays_hover_block #thumb_image:hover #thumb_star:active
+{
+  color: @orange_00;
+  background-color: @orange_00;
+}
+
+/* Rating stars on left footer toolbar on lighttable view */
+
+#lib-rating-stars
+{
+  min-height: 0.8em;
+  min-width: 9em;
+  margin-right: 1em;
+}
+
+/*---------------
+  - Other stuff -
+  ---------------*/
+/*** Some tags below inherit from properties above ; so avoid moving that part ***/
+
+/* Progress bar on bottom left side when exporting, importing, etc... */
+#background_job_eventbox /* background of export progress bar */
+{
+  background-color: @grey_15;
+}
+
+progressbar *
+{
+  background-color: @grey_15;
+  border-radius: 0;
+}
+
+/* Color picker visibility for levels and rgb levels modules.
+   be careful to not change that unless you really now what you do */
+
+#picker-grey
+{
+  color: @grey_40;
+  min-height: 1.3em;
+  border: 0;
+}
+
+/*-----------------
+  - Image options -
+  -----------------*/
+
+/* Set top margin on active image in filmstrip */
+#thumb_main:active #thumb_back
+{
+  border-top: 6px solid @orange_00;
+}
